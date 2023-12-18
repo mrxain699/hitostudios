@@ -1,15 +1,15 @@
 window.addEventListener("DOMContentLoaded", () => {
   const loader_container = document.getElementById("loader-container");
-  const masonary_container = document.getElementById("masonary-container");
+  const masonryContainer = document.getElementById("masonary-container");
   loader_container.style.opacity = 0;
   loader_container.style.zIndex = -1;
   document.body.style.overflowY = "visible";
-  masonary_container
-    ? masonary_container.setAttribute(
-        "data-masonry",
-        '{"percentPosition": true}'
-      )
-    : null;
+  imagesLoaded(masonryContainer, function () {
+    var masonry = new Masonry(masonryContainer, {
+      itemSelector: ".masonry-item",
+      percentPosition: true,
+    });
+  });
 });
 
 // Slider
