@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" />
+  <link type="text/css" rel="stylesheet" href="./assets/css/style.css" />
+  <title>Hito Studio</title>
+</head>
+
+<body>
+  <!--Loader Container-->
+  <div class="loader-container" id="loader-container">
+    <span class="loader"></span>
+  </div>
+  <main class="wrapper container-fluid">
+    <!--Mobile Nav-->
+    <div class="mobile-nav-container" id="mobile-nav-container">
+      <div class="mobile-menu">
+        <div class="mobile-menu-logo">
+          <button type="button" class="hide-mobile-menu-btn" id="hide-menu-btn">
+            <i class="fa-solid fa-xmark icon"></i>
+          </button>
+          <img src="./assets/images/logo.png" alt="logo" />
+        </div>
+        <div class="navigation mobile-navigation w-100">
+          <ul class="w-100">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="games.html">Games</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="mobile-menu-social">
+          <ul class="w-100 d-flex justify-content-center gap-3">
+            <li>
+              <a href=""><i class="fa-brands fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fa-brands fa-pinterest-p"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fa-brands fa-youtube"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!--Sticky Menu-->
+    <div class="sticky-nav-container container-fluid animate__animated" id="sticky-nav-container">
+      <nav class="sticky-nav">
+        <div class="sticky-logo">
+          <a href="">
+            <img src="./assets/images/hito_logo.jpg" alt="logo" />
+          </a>
+        </div>
+        <div class="navigation sticky-menu">
+          <ul>
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="games.html">Games</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <!--Header-->
+    <header class="container-fluid header" id="header">
+      <nav class="nav container-fluid">
+        <div class="logo">
+          <a href="">
+            <img src="./assets/images/hito_logo.jpg" alt="logo" />
+          </a>
+        </div>
+        <div class="navigation navs h-100">
+          <ul class="nav-items">
+            <li class="nav-item active">
+              <a href="index.html" class="nav-links">Home</a>
+            </li>
+            <li class="nav-item"><a href="about.html" class="nav-links">About</a></li>
+            <li class="nav-item"><a href="games.html" class="nav-links">Games</a></li>
+            <li class="nav-item"><a href="gallery.html" class="nav-links">Gallery</a></li>
+            <li class="nav-item"><a href="blog.html" class="nav-links">Blog</a></li>
+            <li class="nav-item"><a href="contact.html" class="nav-links">Contact</a></li>
+          </ul>
+          <span class="search-icon"><i class="fa-solid fa-magnifying-glass fa-lg"></i></span>
+          <span class="nav-contact-btn">
+            <p>Need a Game? Call Us</p>
+            <p>
+              <i class="fa-solid fa-headphones-simple icon"></i>+92 307 5313 442
+            </p>
+          </span>
+          <button type="button" class="icon-bars" id="show-menu-btn">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+      </nav>
+    </header>
+    <!--Slider Section -->
+    <section class="slider-container conatiner-fluid" id="slider-section">
+      <div class="slider owl-carousel owl-theme">
+        <div class="item">
+          <div class="slide-image" style="background-image: url('./assets/images/main-slider/1.jpg')"></div>
+          <div class="slide-content">
+            <div class="platform-icons">
+              <span><i class="fa-brands fa-google-play"></i></span>
+              <span><i class="fa-brands fa-apple"></i></span>
+              <span><i class="fa-brands fa-xbox"></i></span>
+              <span><i class="fa-brands fa-steam-symbol"></i></span>
+            </div>
+            <div class="slide-heading">
+              <h1>We develop the games of<br />next generation</h1>
+            </div>
+            <div class="slide-button">
+              <a href="" id="slider_button" onmouseover="animate_on_mouseover(this)"
+                onmouseout="animate_on_mouseout(this)">Learn More</a>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="slide-image" style="background-image: url('./assets/images/main-slider/2.jpg')"></div>
+          <div class="slide-content">
+            <div class="platform-icons">
+              <span><i class="fa-brands fa-google-play"></i></span>
+              <span><i class="fa-brands fa-apple"></i></span>
+              <span><i class="fa-brands fa-xbox"></i></span>
+              <span><i class="fa-brands fa-steam-symbol"></i></span>
+            </div>
+            <div class="slide-heading">
+              <h1>Level Up Your Entertainment <br />Where Dreams Become Games</h1>
+            </div>
+            <div class="slide-button">
+              <a href="#" id="slider_button" onmouseover="animate_on_mouseover(this)"
+                onmouseout="animate_on_mouseout(this)">Learn More</a>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="slide-image" style="background-image: url('./assets/images/main-slider/3.jpg')"></div>
+          <div class="slide-content">
+            <div class="platform-icons">
+              <span><i class="fa-brands fa-google-play"></i></span>
+              <span><i class="fa-brands fa-apple"></i></span>
+              <span><i class="fa-brands fa-xbox"></i></span>
+              <span><i class="fa-brands fa-steam-symbol"></i></span>
+            </div>
+            <div class="slide-heading">
+              <h1>From Pixels to Play Your <br />Vision, Our Creation</h1>
+            </div>
+            <div class="slide-button">
+              <a href="#" id="slider_button" onmouseover="animate_on_mouseover(this)"
+                onmouseout="animate_on_mouseout(this)">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--About Section-->
+    <section class="about-section container-fluid" id="about-section">
+      <div class="row w-100 about-row-a">
+        <div class="col-sm-12 col-md-12 col-lg-6">
+          <div class="about-left-content left-content">
+            <div class="left-content-heading about-headings">
+              <span>About Hito Studios</span>
+              <h1>Reality Oriented<br />Games of 2019</h1>
+            </div>
+            <div class="mark">
+              <span><img src="./assets/images/icons/logo-icon-black.png" alt="logo icon" /></span>
+              <span class="line line-about"></span>
+            </div>
+          </div>
+        </div>
+        <div class="col col-sm-12 col-md-12 col-lg-6">
+          <div class="about-right-content right-content">
+            <div class="about-content w-100">
+              <p>
+                Veniam quis nostrud exercitation ullamco laboris nisut aliquipe
+                duis aute irure dolor in reprehenderit sed voluptate velit esse.
+              </p>
+              <p>
+                Duis aute irure dolor reprehenderit in voluptate velit essle
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint ocaec at
+                cupdatat proident sunt in culpa qui officia deserunt mol anim id
+                esa laborum perspiciatis omnis laorem ipsum dolor sit ipsum
+                amet.
+              </p>
+              <p>
+                Consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                labore etar dolore magna aliqua umt enim ad minim veniam labore
+                magna aliq Ut enim ad minim veniam, quis nostrud exercitation.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row w-100 about-row-b">
+        <div class="row w-100 justify-content-center align-items-center mt-5">
+          <div class="col-sm-12 col-md-6 col-lg-4 service-item px-4">
+            <div class="service w-100">
+              <div class="service-image item-a">
+                <img src="./assets/images/resource/featured-image-1.jpg" alt="service image" />
+                <div class="service-heading">
+                  <h1>All Genre Games</h1>
+                </div>
+                <div class="overlay">
+                  <div class="overlay-content">
+                    <span><img src="./assets/images/icons/logo-icon-two.png" /></span>
+                    <h1>All Genre Games</h1>
+                    <a href="https://www.youtube.com/watch?v=ticp6ScuyLY" data-fancybox="gallery"><i
+                        class="fa-solid fa-play"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="service-content">
+                <p>
+                  Acepteur sintas haecat sed cupidatat proident sunt culpa quit
+                  officia sedips sed ipsum ametor eserunt.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4 service-item px-4">
+            <div class="service w-100">
+              <div class="service-image item-b">
+                <img src="./assets/images/resource/featured-image-2.jpg" alt="service image" />
+                <div class="service-heading">
+                  <h1>True VR Graphics</h1>
+                </div>
+                <div class="overlay">
+                  <div class="overlay-content">
+                    <span><img src="./assets/images/icons/logo-icon-two.png" /></span>
+                    <h1>All Genre Games</h1>
+                    <a href="https://www.youtube.com/watch?v=ticp6ScuyLY" data-fancybox="gallery"><i
+                        class="fa-solid fa-play"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="service-content">
+                <p>
+                  Acepteur sintas haecat sed cupidatat proident sunt culpa quit
+                  officia sedips sed ipsum ametor eserunt.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4 service-item px-4">
+            <div class="service w-100">
+              <div class="service-image item-c">
+                <img src="./assets/images/resource/featured-image-3.jpg" alt="service image" />
+                <div class="service-heading">
+                  <h1>Billions Of Fanbase</h1>
+                </div>
+                <div class="overlay">
+                  <div class="overlay-content">
+                    <span><img src="./assets/images/icons/logo-icon-two.png" /></span>
+                    <h1>All Genre Games</h1>
+                    <a href="https://www.youtube.com/watch?v=ticp6ScuyLY" data-fancybox="gallery"><i
+                        class="fa-solid fa-play"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="service-content">
+                <p>
+                  Acepteur sintas haecat sed cupidatat proident sunt culpa quit
+                  officia sedips sed ipsum ametor eserunt.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Latest Games Section-->
+    <section class="latest-game-section container-fluid" id="latest-game-section">
+      <div class="section-title latest-game-title w-100 d-flex flex-column justify-content-center align-items-center">
+        <div class="section-mark mb-4">
+          <span class="line line-left"></span>
+          <span><img src="./assets/images/icons/logo-icon-orange.png" alt="logo icon" /></span>
+          <span class="line line-right"></span>
+        </div>
+        <h1>Our Latest Games</h1>
+        <h2>WE DEVELOP GOOD GAMES</h2>
+        <p>
+          Acepteur sintas haecat sed cupidatat non proident sunt culpa quit
+          officia
+          sed ipsum sed ipsum ametor eserunt.</p>
+        </p>
+      </div>
+      <div class="row latest-game-row image-right h-100">
+        <div class="col-sm-12 col-md-12 col-lg-5 h-100 latest-game-content-col order-md-2 order-sm-2 order-lg-1">
+          <div class="latest-game-content">
+            <a href="" class="latest-game-content-title">North Battle II</a>
+            <span class="tags">Fight, Adventure</span>
+            <span class="divider"></span>
+            <p>
+              Exercitation ullamco laboris nisut aliquip duis aute irure dolor
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat.
+            </p>
+            <div class="game-content-items">
+              <div class="content-item">
+                <span>Launch</span>
+                <span>Sep 23, 2019</span>
+              </div>
+              <div class="content-item">
+                <span>Rating</span>
+                <div class="ratings">
+                  <span>4.8</span>
+                  <span>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star-half-stroke"></i>
+                  </span>
+                </div>
+              </div>
+              <div class="content-item">
+                <span>Price</span>
+                <span>Download free</span>
+              </div>
+            </div>
+            <div class="download-btns">
+              <a href="" class="download-btn playstore-btn">
+                <i class="fa-brands fa-google-play btn-icon"></i>
+                <span class="btn-text">
+                  <span>Available On</span>
+                  <span>Google Play</span>
+                </span>
+              </a>
+              <a href="" class="download-btn applestore-btn">
+                <i class="fa-brands fa-apple btn-icon"></i>
+                <span class="btn-text">
+                  <span style="color: #ffffff">Available On</span>
+                  <span>Apple Store</span>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-sm-12 col-md-12 col-lg-7 h-100 order-xs-1 order-md-1 order-sm-1 order-lg-2 latest-game-image-col">
+          <div class="image-container">
+            <a href="https://"><img src="./assets/images/resource/game-image-1.jpg" /></a>
+          </div>
+        </div>
+      </div>
+      <div class="row latest-game-row image-left h-100">
+        <div class="col-sm-12 col-md-12 col-lg-7 h-100 latest-game-image-col">
+          <div class="image-container">
+            <a href="https://"><img src="./assets/images/resource/game-image-2.jpg" /></a>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-5 h-100 latest-game-content-col">
+          <div class="latest-game-content">
+            <a href="" class="latest-game-content-title">Teemu Legends II</a>
+            <span class="tags">Arcade, Puzzle</span>
+            <span class="divider"></span>
+            <p>
+              Exercitation ullamco laboris nisut aliquip duis aute irure dolor
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat.
+            </p>
+            <div class="game-content-items">
+              <div class="content-item">
+                <span>Launch</span>
+                <span>Sep 23, 2019</span>
+              </div>
+              <div class="content-item">
+                <span>Rating</span>
+                <div class="ratings">
+                  <span>4.8</span>
+                  <span>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star-half-stroke"></i>
+                  </span>
+                </div>
+              </div>
+              <div class="content-item">
+                <span>Price</span>
+                <span>Download free</span>
+              </div>
+            </div>
+            <div class="download-btns">
+              <a href="" class="download-btn playstore-btn">
+                <i class="fa-brands fa-google-play btn-icon"></i>
+                <span class="btn-text">
+                  <span>Available On</span>
+                  <span>Google Play</span>
+                </span>
+              </a>
+              <a href="" class="download-btn applestore-btn">
+                <i class="fa-brands fa-apple btn-icon"></i>
+                <span class="btn-text">
+                  <span style="color: #ffffff">Available On</span>
+                  <span>Apple Store</span>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row latest-game-row image-right h-100">
+        <div class="col-sm-12 col-md-12 col-lg-5 h-100 latest-game-content-col order-md-2 order-sm-2 order-lg-1">
+          <div class="latest-game-content">
+            <a href="" class="latest-game-content-title">Soccer Carnival II</a>
+            <span class="tags">Entertainment, Esports</span>
+            <span class="divider"></span>
+            <p>
+              Exercitation ullamco laboris nisut aliquip duis aute irure dolor
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat.
+            </p>
+            <div class="game-content-items">
+              <div class="content-item">
+                <span>Launch</span>
+                <span>Sep 23, 2019</span>
+              </div>
+              <div class="content-item">
+                <span>Rating</span>
+                <div class="ratings">
+                  <span>4.8</span>
+                  <span>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star-half-stroke"></i>
+                  </span>
+                </div>
+              </div>
+              <div class="content-item">
+                <span>Price</span>
+                <span>Download free</span>
+              </div>
+            </div>
+            <div class="download-btns">
+              <a href="" class="download-btn playstore-btn">
+                <i class="fa-brands fa-google-play btn-icon"></i>
+                <span class="btn-text">
+                  <span>Available On</span>
+                  <span>Google Play</span>
+                </span>
+              </a>
+              <a href="" class="download-btn applestore-btn">
+                <i class="fa-brands fa-apple btn-icon"></i>
+                <span class="btn-text">
+                  <span style="color: #ffffff">Available On</span>
+                  <span>Apple Store</span>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-7 h-100 latest-game-image-col order-md-1 order-sm-1 order-lg-2">
+          <div class="image-container">
+            <a href="https://"><img src="./assets/images/resource/game-image-3.jpg" /></a>
+          </div>
+        </div>
+      </div>
+      <div class="row latest-game-row image-left h-100">
+        <div class="col-sm-12 col-md-12 col-lg-7 h-100 latest-game-image-col">
+          <div class="image-container">
+            <a href="https://"><img src="./assets/images/resource/game-image-4.jpg" /></a>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-5 h-100 latest-game-content-col">
+          <div class="latest-game-content">
+            <a href="" class="latest-game-content-title">Turbo War Space II</a>
+            <span class="tags">Simulation, Strategy</span>
+            <span class="divider"></span>
+            <p>
+              Exercitation ullamco laboris nisut aliquip duis aute irure dolor
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat.
+            </p>
+            <div class="game-content-items">
+              <div class="content-item">
+                <span>Launch</span>
+                <span>Sep 23, 2019</span>
+              </div>
+              <div class="content-item">
+                <span>Rating</span>
+                <div class="ratings">
+                  <span>4.8</span>
+                  <span>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star-half-stroke"></i>
+                  </span>
+                </div>
+              </div>
+              <div class="content-item">
+                <span>Price</span>
+                <span>Download free</span>
+              </div>
+            </div>
+            <div class="download-btns">
+              <a href="" class="download-btn playstore-btn">
+                <i class="fa-brands fa-google-play btn-icon"></i>
+                <span class="btn-text">
+                  <span>Available On</span>
+                  <span>Google Play</span>
+                </span>
+              </a>
+              <a href="" class="download-btn applestore-btn">
+                <i class="fa-brands fa-apple btn-icon"></i>
+                <span class="btn-text">
+                  <span style="color: #ffffff">Available On</span>
+                  <span>Apple Store</span>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Gallery Section-->
+    <section class="gallery-section container-fluid" id="gallery-section">
+      <div class="section-title gallery-title w-100 d-flex flex-column justify-content-center align-items-center">
+        <div class="section-mark mb-4">
+          <span class="line line-left"></span>
+          <span><img src="./assets/images/icons/logo-icon-orange.png" alt="logo icon" /></span>
+          <span class="line line-right"></span>
+        </div>
+        <h1>Photos Gallery</h1>
+        <h2>AWESOME SHOTS FROM US</h2>
+      </div>
+      <div class="masonry-gallery w-100">
+        <div class="masonry-container row "  data-masonry='{"percentPosition": true }' id="masonary-container">
+          <div class="gallery-item masonry-item col-xl-3 col-lg-4 col-md-6 col-sm-12">
+            <div class="galler-image-box">
+              <figure class="gallery-image">
+                <img src="./assets/images/gallery/1.png" alt="Gallery Image" />
+                <div class="galler-image-overlay">
+                  <div class="galler-imag-overlay-content">
+                    <a href="#" class="link"><i class="fa-solid fa-link icon"></i></a>
+                    <a href="./assets/images/gallery/1.jpg" data-fancybox="gallery-2" data-caption class="link"><i
+                        class="fa-solid fa-plus icon"></i></a>
+                  </div>
+                </div>
+              </figure>
+            </div>
+          </div>
+          <div class="gallery-item masonry-item col-xl-3 col-lg-4 col-md-6 col-sm-12">
+            <div class="galler-image-box">
+              <figure class="gallery-image">
+                <img src="./assets/images/gallery/2.jpg" alt="Gallery Image" />
+                <div class="galler-image-overlay">
+                  <div class="galler-imag-overlay-content">
+                    <a href="#" class="link"><i class="fa-solid fa-link icon"></i></a>
+                    <a href="./assets/images/gallery/2.jpg" data-fancybox="gallery-2" data-caption class="link"><i
+                        class="fa-solid fa-plus icon"></i></a>
+                  </div>
+                </div>
+              </figure>
+            </div>
+          </div>
+          <div class="gallery-item masonry-item col-xl-3 col-lg-4 col-md-6 col-sm-12">
+            <div class="galler-image-box">
+              <figure class="gallery-image">
+                <img src="./assets/images/gallery/3.jpg" alt="Gallery Image" />
+                <div class="galler-image-overlay">
+                  <div class="galler-imag-overlay-content">
+                    <a href="#" class="link"><i class="fa-solid fa-link icon"></i></a>
+                    <a href="./assets/images/gallery/3.jpg" data-fancybox="gallery-2" data-caption class="link"><i
+                        class="fa-solid fa-plus icon"></i></a>
+                  </div>
+                </div>
+              </figure>
+            </div>
+          </div>
+          <div class="gallery-item masonry-item col-xl-3 col-lg-4 col-md-6 col-sm-12 ">
+            <div class="galler-image-box">
+              <figure class="gallery-image">
+                <img src="./assets/images/gallery/4.jpg" alt="Gallery Image" />
+                <div class="galler-image-overlay">
+                  <div class="galler-imag-overlay-content">
+                    <a href="#" class="link"><i class="fa-solid fa-link icon"></i></a>
+                    <a href="./assets/images/gallery/4.jpg" data-fancybox="gallery-2" data-caption class="link"><i
+                        class="fa-solid fa-plus icon"></i></a>
+                  </div>
+                </div>
+              </figure>
+            </div>
+          </div>
+          <div class="gallery-item masonry-item col-xl-3 col-lg-4 col-md-6 col-sm-12">
+            <div class="galler-image-box">
+              <figure class="gallery-image">
+                <img src="./assets/images/gallery/6.jpg" alt="Gallery Image" />
+                <div class="galler-image-overlay">
+                  <div class="galler-imag-overlay-content">
+                    <a href="#" class="link"><i class="fa-solid fa-link icon"></i></a>
+                    <a href="./assets/images/gallery/6.jpg" data-fancybox="gallery-2" data-caption class="link"><i
+                        class="fa-solid fa-plus icon"></i></a>
+                  </div>
+                </div>
+              </figure>
+            </div>
+          </div>
+          <div class="gallery-item masonry-item col-xl-3 col-lg-4 col-md-6 col-sm-12">
+            <div class="galler-image-box">
+              <figure class="gallery-image">
+                <img src="./assets/images/gallery/7.jpg" alt="Gallery Image" />
+                <div class="galler-image-overlay">
+                  <div class="galler-imag-overlay-content">
+                    <a href="#" class="link"><i class="fa-solid fa-link icon"></i></a>
+                    <a href="./assets/images/gallery/7.jpg" data-fancybox="gallery-2" data-caption class="link"><i
+                        class="fa-solid fa-plus icon"></i></a>
+                  </div>
+                </div>
+              </figure>
+            </div>
+          </div>
+          <div class="gallery-item masonry-item col-xl-6 col-lg-8 col-md-6 col-sm-12">
+            <div class="galler-image-box">
+              <figure class="gallery-image">
+                <img src="./assets/images/gallery/5.jpg" alt="Gallery Image" />
+                <div class="galler-image-overlay">
+                  <div class="galler-imag-overlay-content">
+                    <a href="#" class="link"><i class="fa-solid fa-link icon"></i></a>
+                    <a href="./assets/images/gallery/5.jpg" data-fancybox="gallery-2" data-caption class="link"><i
+                        class="fa-solid fa-plus icon"></i></a>
+                  </div>
+                </div>
+              </figure>
+            </div>
+          </div>
+          <div class="gallery-item masonry-item col-xl-3 col-lg-4 col-md-6 col-sm-12">
+            <div class="galler-image-box">
+              <figure class="gallery-image">
+                <img src="./assets/images/gallery/9.jpg" alt="Gallery Image" />
+                <div class="galler-image-overlay">
+                  <div class="galler-imag-overlay-content">
+                    <a href="#" class="link"><i class="fa-solid fa-link icon"></i></a>
+                    <a href="./assets/images/gallery/9.jpg" data-fancybox="gallery-2" data-caption class="link"><i
+                        class="fa-solid fa-plus icon"></i></a>
+                  </div>
+                </div>
+              </figure>
+            </div>
+          </div>
+          <div class="gallery-item masonry-item col-xl-3 col-lg-4 col-md-6 col-sm-12">
+            <div class="galler-image-box">
+              <figure class="gallery-image">
+                <img src="./assets/images/gallery/8.jpg" alt="Gallery Image" />
+                <div class="galler-image-overlay">
+                  <div class="galler-imag-overlay-content">
+                    <a href="#" class="link"><i class="fa-solid fa-link icon"></i></a>
+                    <a href="./assets/images/gallery/8.jpg" data-fancybox="gallery-2" data-caption class="link"><i
+                        class="fa-solid fa-plus icon"></i></a>
+                  </div>
+                </div>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Counter Section-->
+    <section class="section section-counter container-fluid" id="section-counter">
+      <div class="row counter-row">
+        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 counter-item">
+          <div class="counter-container">
+            <div class="counter-box" id="counters_1">
+              <div class="counter" data-TargetNum="130" data-Speed="2000" data-Easing="linear"></div>
+              <span>+</span>
+            </div>
+            <div class="counter-heading">Games Developed</div>
+            <span class="counter-icon"><img src="./assets/images/icons/game-controller-100.png"></span>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 counter-item">
+          <div class="counter-container">
+            <span class="counter-icon"><img src="./assets/images/icons/user.png"></span>
+            <div class="counter-box" id="counters_1">
+              <div class="counter" data-TargetNum="62" data-Speed="2000" data-Easing="linear"></div>
+              <span>+</span>
+            </div>
+            <div class="counter-heading">Team Members</div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 counter-item">
+          <div class="counter-container">
+            <div class="counter-box" id="counters_1">
+              <div class="counter" data-TargetNum="45" data-Speed="2000" data-Easing="linear"></div>
+              <span>M</span>
+            </div>
+            <div class="counter-heading">Games Downloads</div>
+            <span class="counter-icon"><img src="./assets/images/icons/download.png"></span>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 counter-item">
+          <div class="counter-container">
+            <span class="counter-icon"><img src="./assets/images/icons/growth.png"></span>
+            <div class="counter-box" id="counters_1">
+              <div class="counter" data-TargetNum="70" data-Speed="2000" data-Easing="linear"></div>
+              <span>%</span>
+            </div>
+            <div class="counter-heading">Growth Rate</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Review Section-->
+    <section class="section reviews-section container-fluid" id="review-section">
+      <div class="section-title review-title w-100 d-flex flex-column justify-content-center align-items-center">
+        <div class="section-mark mb-4">
+          <span class="line line-left"></span>
+          <span><img src="./assets/images/icons/logo-icon-orange.png" alt="logo icon" /></span>
+          <span class="line line-right"></span>
+        </div>
+        <h1>Players Reviews</h1>
+        <h2>What they say about games</h2>
+      </div>
+      <div class="slider-testimonial owl-carousel owl-theme">
+        <div class="item">
+          <div class="slide-review">Auis nostrud exercitation ullamco laboris nisi ut aliquip ex ea comod duis aute rure
+            dolor reprehenderit voluptate velit esse cillum dolore fugiat ipsum nulla pariatur eaxcepteur sint occaecat
+            cupidatat non proident sunt in culpa qui officia. enim ad minim veniam, quis nost exercitation ullamco
+            laboris
+            nisi ut aliquip ex ea.
+
+          </div>
+        </div>
+        <div class="item">
+          <div class="slide-review">Buis nostrud exercitation ullamco laboris nisi ut aliquip ex ea comod duis aute rure
+            dolor reprehenderit voluptate velit esse cillum dolore fugiat ipsum nulla pariatur eaxcepteur sint occaecat
+            cupidatat non proident sunt in culpa qui officia. enim ad minim veniam, quis nost exercitation ullamco
+            laboris
+            nisi ut aliquip ex ea.
+
+          </div>
+        </div>
+        <div class="item">
+          <div class="slide-review ">Cuis nostrud exercitation ullamco laboris nisi ut aliquip ex ea comod duis aute
+            rure
+            dolor reprehenderit voluptate velit esse cillum dolore fugiat ipsum nulla pariatur eaxcepteur sint occaecat
+            cupidatat non proident sunt in culpa qui officia. enim ad minim veniam, quis nost exercitation ullamco
+            laboris
+            nisi ut aliquip ex ea.
+
+          </div>
+        </div>
+      </div>
+
+      <div class="slider-thumb-testimonial owl-carousel owl-theme">
+        <div class="item">
+          <div class="slide-thumb">
+            <img src="./assets/images/resource/rev-thumb-1.jpg">
+          </div>
+        </div>
+        <div class="item">
+          <div class="slide-thumb">
+            <img src="./assets/images/resource/rev-thumb-2.jpg">
+          </div>
+        </div>
+        <div class="item">
+          <div class="slide-thumb">
+            <img src="./assets/images/resource/rev-thumb-3.jpg">
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <!--Contact Section-->
+    <section class="section contact-section container-fluid" id="contact-section">
+      <div class="row contact-row">
+        <div class="col-sm-12 col-md-12 col-lg-8 contact-form-item contact-item-left">
+          <div class="section-title contact-title w-100 d-flex flex-column justify-content-start align-items-start ">
+            <div class="section-mark mb-4">
+              <span class="line line-left"></span>
+              <span><img src="./assets/images/icons/logo-icon-orange.png" alt="logo icon" /></span>
+              <span class="line line-right"></span>
+            </div>
+            <h1>Get in Touch</h1>
+            <h2>GOT AN IDEA? SEND MESSAGE</h2>
+          </div>
+          <div class="contact-message">
+            <p>Acepteur sintas haecat sed cupidatat no proident sunt culpa quit officia sed ipsum sed ametor eserunt
+              reprehend voluptate velit esse cillum dolore fugiat pariatur.</p>
+            <p>Excepteur sint occaecat cupidatat non proident sunt.</p>
+          </div>
+          <div class="contact-form">
+            <form method="post" autocomplete="off">
+              <div class="row input-fields-row-a">
+                <div class="col-sm-12 col-md-12 col-lg-6 input-item">
+                  <div class="inputs">
+                    <input type="text" name="name" id="name" class="form-control" placeholder="Your Name" required />
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-6 input-item">
+                  <div class="inputs">
+                    <input type="email" name="email" id="email" class="form-control" placeholder="Email Address"
+                      required />
+                  </div>
+                </div>
+              </div>
+              <div class="row input-fields-row-b">
+                <div class="col-sm-12 col-md-12 col-lg-6 input-item">
+                  <div class="inputs">
+                    <input type="number" name="number" id="number" class="form-control" placeholder="Phone Number"
+                      required />
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-6 input-item">
+                  <div class="inputs">
+                    <input type="text" name="subject" id="subject" class="form-control" placeholder="Subject"
+                      required />
+                  </div>
+                </div>
+              </div>
+              <div class="row input-fields-row-c">
+                <div class="col-sm-12 col-md-12 col-lg-12 input-item">
+                  <div class="inputs">
+                    <textarea type="text" name="message" id="message" rows="5" class="form-control"
+                      placeholder="Type Your Message" required></textarea>
+                  </div>
+                </div>
+              </div>
+              <div class="row input-fields-row-d">
+                <div class="col-sm-12 col-md-12 col-lg-12 input-item">
+                  <button type="submit" class="submit-btn" onmouseover=" animate_on_mouseover(this)"
+                    onmouseout="animate_on_mouseout(this)">
+                    <img src="./assets/images/icons/logo-icon-two.png" />
+                    Send
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-4 contact-info-item">
+          <div class="contact-info-container">
+            <div class="contact-info-heading">
+              <h4>Address</h4>
+            </div>
+            <div class="contact-info-divider"></div>
+            <div class="contact-info-contact">
+              <span>360 broadway Square, Parklane Avenue, Florida, USA 33220</span>
+            </div>
+          </div>
+          <div class="contact-info-container">
+            <div class="contact-info-heading">
+              <h4>Email</h4>
+            </div>
+            <div class="contact-info-divider"></div>
+            <div class="contact-info-contact">
+              <a href="">games.development@domain.com</a>
+            </div>
+          </div>
+          <div class="contact-info-container">
+            <div class="contact-info-heading">
+              <h4>Phone</h4>
+            </div>
+            <div class="contact-info-divider"></div>
+            <div class="contact-info-contact">
+              <a href="#">+92 307 5313 442</a>
+            </div>
+          </div>
+          <div class="contact-info-container">
+            <div class="contact-info-heading">
+              <h4>Work Hours</h4>
+            </div>
+            <div class="contact-info-divider"></div>
+            <div class="contact-info-contact">
+              <span>Monday to Friday: 9:00am to 6:00pm</span>
+            </div>
+          </div>
+          <div class="contact-info-container">
+            <div class="contact-info-heading">
+              <h4>Social Networks</h4>
+            </div>
+            <div class="contact-info-divider"></div>
+            <div class="contact-info-contact">
+              <div class="contact-social-networks">
+                <a href=""><i class="fa-brands fa-square-facebook icon"></i></a>
+                <a href=""><i class="fa-brands fa-square-twitter icon"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin icon"></i></a>
+                <a href=""><i class="fa-brands fa-instagram icon"></i></a>
+                <a href=""><i class="fa-brands fa-youtube icon"></i></a>
+                <a href=""><i class="fa-brands fa-flickr icon"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section footer-section container-fluid" id="footer-section">
+      <div class="footer-wrapper container-fluid w-100">
+        <div class="footer-logo">
+          <img src="./assets/images/logo.png" alt="Footer Logo" />
+        </div>
+        <div class="quick-links w-100">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="games.html">Games</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="blog.html">Blog</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-divider">
+        </div>
+        <div class="footer-contact w-100">
+          <a href=""><i class="fa-solid fa-envelope icon"></i> games.development@domain.com</a>
+          <span><i class="fa-solid fa-location-dot icon"></i> 360 broadway Square, Parklane Avenue, Florida, USA
+            33220</span>
+          <a href=""><i class="fa-solid fa-phone icon"></i> +92 307 5313 442</a>
+        </div>
+        <div class="copyright-text">
+          <span>&copy; Copyright Hito Gaming Studio 2023-2024. All Rights Reserved.</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+
+
+  <script src="./assets/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script type="text/javascript" src="./assets/js/jQuery-inView.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js"></script>
+  <script type="text/javascript" src="./assets/js/multi-animated-counter.js"></script>
+  <script type="text/javascript" src="./assets/js/index.js"></script>
+</body>
+
+</html>
