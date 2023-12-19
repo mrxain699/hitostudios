@@ -1514,7 +1514,7 @@ Team  Section
   left: 0;
   width: 100%;
   height: 0;
-  background-color: var(--black);
+  background-color: var(--green);
   z-index: -1;
   border-radius: 5px;
   transition: all 0.6s ease-in-out;
