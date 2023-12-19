@@ -1064,7 +1064,8 @@ Game Section
 */
 
 .latest-game-section,
-.gallery-section {
+.gallery-section,
+.section-team {
   min-height: 100vh;
   background-color: var(--background-section);
   background-image: url("../images/icons/dot-pattern-2.png");
@@ -1475,6 +1476,130 @@ Counter Section
   font-size: 2rem;
   color: var(--white);
   text-transform: uppercase;
+}
+
+/*
+================================================================
+Team  Section
+================================================================
+*/
+
+.section-team {
+  background-color: var(--background-section);
+}
+
+.team-item {
+  position: relative;
+  height: 100%;
+  padding-inline: 1rem !important;
+}
+
+.team-box {
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 0 !important;
+  border-radius: 5px;
+  z-index: 1;
+}
+
+.team-box::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background-color: var(--black);
+  z-index: -1;
+  border-radius: 5px;
+  transition: all 0.6s ease-in-out;
+}
+
+.team-member-image-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.team-member-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.team-member-image::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  transition: all 0.6s ease-in-out;
+}
+
+.team-member-image img {
+  width: 100%;
+  height: 100%;
+  object-position: center;
+  object-fit: contain;
+  border-radius: 100%;
+  position: relative;
+}
+
+.team-member-name {
+  margin-top: 3rem !important;
+}
+
+.team-member-designation {
+  margin-top: 2rem !important;
+  color: var(--tomato);
+}
+
+.team-member-socials {
+  margin-top: 0.5rem !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.team-member-socials a {
+  color: var(--background-section);
+  font-size: 3rem;
+}
+
+.team-member-socials a:hover {
+  color: var(--tomato);
+}
+
+.team-box:hover::after {
+  height: 100%;
+}
+
+.team-box:hover .team-member-socials {
+  opacity: 1;
+}
+
+.team-box:hover .team-member-name h1 {
+  color: var(--background-section);
+}
+
+.team-box:hover .team-member-image::after {
+  top: 0;
 }
 
 /*
@@ -1951,7 +2076,8 @@ Footer Section
 @media screen and (min-width: 1400px) and (max-width: 1500px) {
   .latest-game-section,
   .gallery-section,
-  .contact-section {
+  .contact-section,
+  .section-team {
     padding-inline: 5rem !important;
   }
 }
@@ -1984,7 +2110,8 @@ Footer Section
   .latest-game-section,
   .gallery-section,
   .contact-section,
-  .footer-section {
+  .footer-section,
+  .section-team {
     padding-inline: 5rem !important;
   }
 
@@ -2051,7 +2178,8 @@ Footer Section
   .latest-game-section,
   .gallery-section,
   .contact-section,
-  .footer-section {
+  .footer-section,
+  .section-team {
     padding-inline: 2rem !important;
   }
 
@@ -2155,7 +2283,8 @@ Footer Section
   .latest-game-section,
   .gallery-section,
   .contact-section,
-  .footer-section {
+  .footer-section,
+  .section-team {
     padding-inline: 2rem !important;
   }
 
