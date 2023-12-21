@@ -1231,7 +1231,7 @@ Game Section
 }
 
 .download-btns a.download-btn:hover {
-  opacity: 0.5;
+  opacity: 0.8;
 }
 
 .download-btns a.download-btn > .btn-icon {
@@ -1400,13 +1400,13 @@ Gallery Section
 .gallery-item:hover .galler-imag-overlay-content a.link {
   top: 0;
   opacity: 1;
-  transition: all 700ms ease 700ms;
+  transition: all 700ms ease 100ms;
 }
 
-.galler-imag-overlay-content a.link:hover {
+.gallery-item .galler-imag-overlay-content a.link:hover {
+  transition: all 50ms ease !important;
   color: var(--tomato) !important;
   background-color: var(--white) !important;
-  transition: 0.5s linear !important;
 }
 
 /*
