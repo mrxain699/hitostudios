@@ -1486,6 +1486,7 @@ Team  Section
 
 .section-team {
   background-color: var(--background-section);
+  min-height: auto !important;
 }
 
 .team-item {
@@ -2073,12 +2074,21 @@ Footer Section
 ================================================================
 */
 
+@media screen and (min-width: 1700px) {
+  .latest-game-section {
+    padding-inline: 30rem !important;
+  }
+}
+
 @media screen and (min-width: 1400px) and (max-width: 1500px) {
   .latest-game-section,
   .gallery-section,
   .contact-section,
   .section-team {
     padding-inline: 5rem !important;
+  }
+  .latest-game-section {
+    padding-inline: 10rem !important;
   }
 }
 
@@ -2181,6 +2191,10 @@ Footer Section
   .footer-section,
   .section-team {
     padding-inline: 2rem !important;
+  }
+
+  .latest-game-section {
+    padding-inline: 5rem !important;
   }
 
   .latest-game-content {
