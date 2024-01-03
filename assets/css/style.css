@@ -40,6 +40,11 @@ section {
   position: relative;
 }
 
+.content-container {
+  margin: 0 auto !important;
+  position: static;
+}
+
 /*
 ================================================================
 Loader
@@ -788,6 +793,29 @@ About Section
 ================================================================
 */
 
+.first-row {
+  position: relative;
+}
+.first-row::after {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 18px;
+  background-image: url("../images/icons/pattern-1.png");
+  background-repeat: repeat-x;
+  background-position: left bottom;
+  left: 0;
+  bottom: -18px;
+}
+.first-row:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  background-color: #f8f8f8;
+}
+
 .left-content,
 .right-content {
   width: 100%;
@@ -801,7 +829,6 @@ About Section
   align-items: end;
   flex-direction: column;
   padding-right: 6rem !important;
-  background-color: var(--background-section);
 }
 
 .about-headings {
@@ -882,7 +909,7 @@ About Section
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  padding: 10rem 12rem 0 6rem !important;
+  padding: 10rem 2rem 0 6rem !important;
 }
 
 .about-content p {
@@ -895,7 +922,6 @@ About Section
   font-weight: 500;
 }
 
-.about-left-content::after,
 .about-section::after {
   content: "";
   position: absolute;
@@ -905,15 +931,11 @@ About Section
   background-repeat: repeat-x;
   background-position: left bottom;
   left: 0;
-  bottom: -18px;
-}
-
-.about-section::after {
-  bottom: 0 !important;
+  bottom: 0;
 }
 
 .about-row-b {
-  padding: 12rem 16rem !important;
+  padding: 12rem 0 !important;
   background-image: url("../images/icons/dot-pattern-1.png");
 }
 
@@ -1072,7 +1094,7 @@ Game Section
   background-repeat: no-repeat;
   background-position: left bottom;
   overflow: visible;
-  padding: 10rem 20rem 3rem 18rem !important;
+  padding: 10rem 0 3rem 0 !important;
 }
 
 .section-title-line {
@@ -1437,7 +1459,7 @@ Counter Section
 }
 
 .counter-row {
-  margin: 3rem 15rem !important;
+  margin: 3rem 0 !important;
 }
 
 .counter-item:nth-child(odd) .counter-heading {
@@ -1486,7 +1508,7 @@ Team  Section
 
 .section-team {
   background-color: var(--background-section);
-  min-height: auto !important;
+  min-height: auto;
 }
 
 .team-item {
@@ -1987,6 +2009,10 @@ Contact Page - Map Styling
   background-color: var(--white);
 }
 
+.contact-first-row::after {
+  bottom: 0;
+}
+
 /*
 ================================================================
 Footer Section
@@ -2074,24 +2100,6 @@ Footer Section
 ================================================================
 */
 
-@media screen and (min-width: 1700px) {
-  .latest-game-section {
-    padding-inline: 30rem !important;
-  }
-}
-
-@media screen and (min-width: 1400px) and (max-width: 1500px) {
-  .latest-game-section,
-  .gallery-section,
-  .contact-section,
-  .section-team {
-    padding-inline: 5rem !important;
-  }
-  .latest-game-section {
-    padding-inline: 10rem !important;
-  }
-}
-
 @media screen and (min-width: 1200px) and (max-width: 1400px) {
   .nav-items {
     gap: 3rem;
@@ -2115,14 +2123,6 @@ Footer Section
 
   .about-row-b {
     padding-inline: 2rem !important;
-  }
-
-  .latest-game-section,
-  .gallery-section,
-  .contact-section,
-  .footer-section,
-  .section-team {
-    padding-inline: 5rem !important;
   }
 
   .latest-game-content {
@@ -2173,16 +2173,12 @@ Footer Section
     display: none;
   }
 
-  .about-content {
-    padding-right: 5rem !important;
-  }
-
   .about-content p {
     font-size: 1.5rem;
   }
 
-  .about-row-b {
-    padding-inline: 2rem !important;
+  .content-container {
+    max-width: 100%;
   }
 
   .latest-game-section,
@@ -2191,10 +2187,6 @@ Footer Section
   .footer-section,
   .section-team {
     padding-inline: 2rem !important;
-  }
-
-  .latest-game-section {
-    padding-inline: 5rem !important;
   }
 
   .latest-game-content {
@@ -2255,9 +2247,17 @@ Footer Section
     margin-inline: 2rem !important;
   }
 
+  .first-row::before,
+  .first-row::after {
+    display: none;
+  }
+
+  .about-section .content-container {
+    max-width: 100% !important;
+  }
+
   .about-left-content {
     padding-left: 2rem !important;
-    background-color: transparent;
     padding-top: 2rem !important;
   }
 
@@ -2340,6 +2340,24 @@ Footer Section
     margin-bottom: 2rem !important;
   }
 
+  .slider-testimonial {
+    width: 100% !important;
+    height: auto !important;
+    padding: 1rem 2rem !important;
+  }
+
+  .slider-testimonial .slide-review {
+    text-align: center;
+    font-size: 1.4rem;
+  }
+
+  .slider-thumb-testimonial {
+    width: 300px;
+    height: 100px;
+    margin: -10px auto !important;
+    overflow: hidden;
+  }
+
   .quick-links {
     gap: 3rem !important;
   }
@@ -2394,8 +2412,8 @@ Footer Section
   }
 
   .slider-thumb-testimonial {
-    width: 100%;
-    height: 140px;
+    width: 300px;
+    height: 100px;
     margin: -10px auto !important;
     position: relative;
   }
@@ -2525,8 +2543,8 @@ Footer Section
   }
 
   .slider-thumb-testimonial {
-    width: 100%;
-    height: 120px;
+    width: 300px;
+    height: 100px;
     margin: -10px auto !important;
     overflow: hidden;
   }
